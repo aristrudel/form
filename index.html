@@ -11,35 +11,28 @@
     <body>
         <h1> Register with us! </h1>
 
-<form action=""method="GET" target="_blank">
+    <form action="/submitsuccess.html" method="GET" target="_blank">
+        <label for="username">Username:</label><br>
+            <input type="form" id="username" name="username" placeholder="Username" autofocus required><br>
 
-    <form>
-        <label for="username">Username:</label>
-            <input type="form" id="username" name="username" placeholder="Username" autofocus required>
-    </form>
+        <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required><br> 
 
-    <form>
-        <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
-    </form>
+        <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,16}" placeholder="Password" required><br>
 
-    <form>     
-        <label for="password">Password:</label>
-            <input type="password" id="password" name="password" minlength="8" maxlength="16" placeholder="Password" required><br>
-        <label for="cpassword">Confirm password:</label>
-            <input type="cpassword" id="cpassword" name="cpassword"minlength="8" maxlength="16" placeholder="Confirm password" required>
-    </form>
+        <label for="cpassword">Confirm password:</label><br>
+            <input type="password" id="cpassword" name="cpassword"minlength="8" maxlength="16" placeholder="Confirm password" required><br>
 
-    <form>
             <input type="checkbox" id="newsletter" name="newsletter" value="subscribed">
         <label for="newsletter">Subscribe to our newsletter!</label><br>
+
             <input type="checkbox" id="promotional" name="promotional" value="subscribed"> 
-        <label for="promotional">Yes, I would like to receive emails for the latest news and promotional offers!</label>
+        <label for="promotional">Yes, I would like to receive emails for the latest news and promotional offers!</label><br>
+        
+        <button type="submit">Submit</button>
     </form>
 
-<input type="submit" value="Submit">
-<input type="reset">
-</form>
 
 <div>
     <p> By signing up you acknowledge and agree to our <a target="_blank" href="#">Terms & Conditions</a> and 
@@ -50,6 +43,7 @@
     <div>
         <p>Already a member?</p>
     </div>
+    <form> </form>
 </form>
 
     </body>
