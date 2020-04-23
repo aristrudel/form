@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
         <title>
 
         </title>
         <style>
+            body {
+                height: 100vh;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
 
         </style>
     </head>
@@ -22,7 +30,7 @@
             <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,16}" placeholder="Password" required><br>
 
         <label for="cpassword">Confirm password:</label><br>
-            <input type="password" id="cpassword" name="cpassword"minlength="8" maxlength="16" placeholder="Confirm password" required><br>
+            <input type="password" id="cpassword" name="cpassword" pattern="[A-Za-z0-9]{8,16}" placeholder="Confirm password" required><br>
 
             <input type="checkbox" id="newsletter" name="newsletter" value="subscribed">
         <label for="newsletter">Subscribe to our newsletter!</label><br>
